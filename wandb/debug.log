@@ -1,0 +1,188 @@
+2021-09-21 10:04:45,660 DEBUG   MainThread:55072 [wandb_config.py:_load_defaults():112] no defaults not found in config-defaults.yaml
+2021-09-21 10:04:45,664 DEBUG   MainThread:55072 [meta.py:setup():94] code probe starting
+2021-09-21 10:04:45,665 DEBUG   MainThread:55072 [meta.py:_setup_code_git():49] probe for git information
+2021-09-21 10:04:45,666 DEBUG   MainThread:55072 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/carey/wb-test-script/launch-demo, universal_newlines=False, shell=None)
+2021-09-21 10:04:45,674 DEBUG   MainThread:55072 [meta.py:_setup_code_program():58] scan for untracked program
+2021-09-21 10:04:45,675 DEBUG   MainThread:55072 [cmd.py:execute():722] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/Users/carey/wb-test-script/launch-demo, universal_newlines=False, shell=None)
+2021-09-21 10:04:45,683 DEBUG   MainThread:55072 [meta.py:setup():116] code probe done
+2021-09-21 10:04:45,692 DEBUG   MainThread:55072 [run_manager.py:__init__():537] Initialized sync for launch-demo/jrxrmto8
+2021-09-21 10:04:45,695 INFO    MainThread:55072 [run_manager.py:wrap_existing_process():1135] wrapping existing process 55052
+2021-09-21 10:04:45,695 WARNING MainThread:55072 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2021-09-21 10:04:45,700 DEBUG   MainThread:55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2021-09-21 10:04:45,782 DEBUG   MainThread:55072 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 60195
+2021-09-21 10:04:45,806 INFO    MainThread:55072 [run_manager.py:init_run():920] system metrics and metadata threads started
+2021-09-21 10:04:45,806 INFO    MainThread:55072 [run_manager.py:init_run():954] upserting run before process can begin, waiting at most 10 seconds
+2021-09-21 10:04:45,814 DEBUG   Thread-14 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:45,997 DEBUG   Thread-14 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:04:46,020 INFO    Thread-14 :55072 [run_manager.py:_upsert_run():1039] saving patches
+2021-09-21 10:04:46,020 DEBUG   Thread-14 :55072 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/carey/wb-test-script/launch-demo, universal_newlines=False, shell=None)
+2021-09-21 10:04:46,036 DEBUG   Thread-14 :55072 [cmd.py:execute():722] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/carey/wb-test-script/launch-demo, universal_newlines=False, shell=None)
+2021-09-21 10:04:46,051 ERROR   Thread-14 :55072 [internal.py:save_patches():212] Error generating diff: Reference at 'refs/remotes/origin/master' does not exist
+2021-09-21 10:04:46,051 INFO    Thread-14 :55072 [run_manager.py:_upsert_run():1043] saving pip packages
+2021-09-21 10:04:46,052 INFO    Thread-14 :55072 [run_manager.py:_upsert_run():1045] initializing streaming files api
+2021-09-21 10:04:46,052 INFO    Thread-14 :55072 [run_manager.py:_upsert_run():1052] unblocking file change observer, beginning sync with W&B servers
+2021-09-21 10:04:46,053 INFO    MainThread:55072 [run_manager.py:wrap_existing_process():1152] informing user process we are ready to proceed
+2021-09-21 10:04:46,056 INFO    MainThread:55072 [run_manager.py:_sync_etc():1259] entering loop for messages from user process
+2021-09-21 10:04:46,057 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:46,198 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:04:46,671 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:04:46,673 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/config.yaml
+2021-09-21 10:04:46,681 DEBUG   Thread-3  :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:46,876 DEBUG   Thread-3  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:04:46,883 INFO    Thread-3  :55072 [run_manager.py:_on_file_created():673] file/dir created: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/requirements.txt
+2021-09-21 10:04:46,884 INFO    Thread-3  :55072 [run_manager.py:_on_file_created():673] file/dir created: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:04:46,884 INFO    Thread-3  :55072 [run_manager.py:_on_file_created():673] file/dir created: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/output.log
+2021-09-21 10:04:46,885 INFO    Thread-3  :55072 [run_manager.py:_on_file_created():673] file/dir created: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:04:48,674 DEBUG   Thread-17 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:48,776 DEBUG   Thread-18 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:48,869 DEBUG   Thread-17 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:04:48,877 DEBUG   Thread-19 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:48,883 DEBUG   Thread-17 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-09-21 10:04:48,892 DEBUG   Thread-7  :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:04:48,971 DEBUG   Thread-18 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:04:48,979 DEBUG   Thread-18 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-09-21 10:04:49,067 DEBUG   Thread-19 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:04:49,077 DEBUG   Thread-19 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-09-21 10:04:49,109 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:04:49,218 DEBUG   Thread-17 :55072 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/carey/launch-demo/jrxrmto8/config.yaml?Expires=1632330288&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=VMx%2BPilFh11LhugEB%2FACe8B7%2FJ6fsg86rtb4kYem6%2BvVo2RR0bJn6iI7KEhc8Hd1mEEsC1m%2B30%2BztUVKwgO3Pe%2BxtZt6UHaKsbs90rgWuhR7I%2BXNZ2p0YzzItnlaiEzB10t8tEiyFyjZA37T%2BNbY9ux0YeC4N2rzcEs5yOU%2BNdsxMo12r0Yq9uwTdLokAxKlRMMSSNjIJ7sqDK37wxGAhZGAJzLTG38FOb4lECj92gN17fNUkQs451SKKU8OLK5WUrcHuFdAnV3zyyRFu73eGDX4UToD5uNZU013iMI4R5R0dVd4ds59oqyDhlWqpGvfiIo4yTnEt1%2FOclDAGasp6Q%3D%3D HTTP/1.1" 200 0
+2021-09-21 10:04:49,314 DEBUG   Thread-18 :55072 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/carey/launch-demo/jrxrmto8/requirements.txt?Expires=1632330288&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=QPd0boUX4NKMEErcpMYD7qCGITJStZgYXSBG6EUWZUXCI%2BTzig8ODsOrDs7RHVGsoMjvrb9b7QKW0vg9enKt6XX4fAdetQM17MaunBZoUuh7kLV%2FtTGX6aMh1Z%2Bb1ixqJFJUNw0jWvOMIS7KoClSj6GmKHxdiqi7K49FDdMzS1nqFZBaXEiqQXc3FHB5SLtviayvNp0nn0FDQ1N0JUHL6qNzWvTWOAcDY9gIabFZq%2FPuoN6FH0ZUscIrqWUmL%2FmiOo9pmIsM3gbA1Tgp%2BrEKWsyeSihITQfg1jAiwjqp2UIl57MKWy5xAfmr%2FRgJi6xsH%2BJfV4sQPAUCJVUI4ZwFbg%3D%3D HTTP/1.1" 200 0
+2021-09-21 10:04:49,398 DEBUG   Thread-19 :55072 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/carey/launch-demo/jrxrmto8/wandb-metadata.json?Expires=1632330289&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aHfDiOJaZs0gFoWVur6niRU%2FBQXvjbtAuYeXRqN%2FnsTZuHgGc9HK65FzpTBtdBoHqEkcymWqnCdhKD76v8UMQCsqdWDNlayygCOuZtNB97Z6yoYBRxGs6%2F%2BlFC21ft4PCtGiKryHy%2F52hs%2BOsxRXPkq8wM37MCG0gHgAkZgNpdxj4%2B9zstUXm8bOlLDiuot7SUramKjpTKTQ0PGCIj76vsp8cWrWWVJ8f5%2BAzPNaUB5ynwrxaAw6E3O89EUCmKrWgUjWpzWRuJr2L6ttBArKwbz02eIboaiWPcW9QgtFFvZV2MQ2KOVWVK72nsn%2BHWPT3kjsmjTKNXTIfbyt8UQtWQ%3D%3D HTTP/1.1" 200 0
+2021-09-21 10:04:51,679 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:04:51,679 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:04:51,771 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:04:53,874 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:04:56,693 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:04:56,694 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:04:56,781 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:04:58,893 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:01,219 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:05:01,705 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:01,706 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:01,789 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:01,801 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:05:02,706 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:05:03,897 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:06,716 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:06,717 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:06,797 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:08,908 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:11,732 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:11,732 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:11,811 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:13,926 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:14,743 INFO    Thread-3  :55072 [run_manager.py:_on_file_created():673] file/dir created: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-events.jsonl
+2021-09-21 10:05:16,748 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:16,748 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:16,821 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:05:16,856 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:16,999 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:05:18,753 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:05:19,045 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:21,762 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:21,762 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:21,851 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:23,968 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:26,776 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:26,777 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:26,876 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:29,128 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:31,791 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:31,792 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:31,879 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:32,020 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:05:32,186 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:05:33,999 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:34,800 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:05:36,807 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:36,807 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:36,893 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:38,990 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:41,830 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:41,831 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:41,931 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:44,044 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:05:45,837 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-events.jsonl
+2021-09-21 10:05:46,838 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:46,839 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:47,207 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:05:47,440 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:05:50,856 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:05:51,857 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:51,857 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:56,871 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:05:56,871 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:05:57,000 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:06:01,893 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:01,894 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:02,479 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:06:02,641 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:06:06,909 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:06,910 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:06,911 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:06:07,020 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:06:11,929 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:11,930 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:16,943 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-events.jsonl
+2021-09-21 10:06:16,943 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:16,944 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:17,032 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:06:17,660 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:06:17,833 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:06:21,963 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:21,964 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:22,965 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:06:26,976 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:26,977 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:27,055 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:06:31,995 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:31,995 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:32,847 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:06:33,428 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:06:37,015 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:37,016 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:37,092 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:06:39,020 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:06:42,031 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:42,031 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:47,049 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-events.jsonl
+2021-09-21 10:06:47,050 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:47,050 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:47,118 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:06:48,439 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:06:48,606 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:06:52,066 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:52,067 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:55,077 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:06:57,085 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:06:57,085 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:06:57,145 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:07:02,104 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:07:02,105 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:07:03,618 DEBUG   Thread-15 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:07:03,777 DEBUG   Thread-15 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:07:07,128 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:07:07,128 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:07:07,174 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:07:11,140 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:07:12,146 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-history.jsonl
+2021-09-21 10:07:12,146 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-summary.json
+2021-09-21 10:07:16,456 INFO    MainThread:55072 [run_manager.py:_sync_etc():1282] received message from user process: {"exitcode": 1}
+2021-09-21 10:07:16,456 INFO    MainThread:55072 [run_manager.py:_sync_etc():1368] closing log streams and sending exitcode to W&B
+2021-09-21 10:07:16,457 INFO    MainThread:55072 [run_manager.py:shutdown():1059] shutting down system stats and metadata service
+2021-09-21 10:07:17,159 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/output.log
+2021-09-21 10:07:17,159 INFO    Thread-3  :55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-events.jsonl
+2021-09-21 10:07:17,189 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:07:17,248 INFO    MainThread:55072 [run_manager.py:shutdown():1071] stopping streaming files and file change observer
+2021-09-21 10:07:18,165 INFO    MainThread:55072 [run_manager.py:_on_file_modified():684] file/dir modified: /Users/carey/wb-test-script/launch-demo/wandb/run-20210921_170445-jrxrmto8/wandb-metadata.json
+2021-09-21 10:07:19,104 DEBUG   MainThread:55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:07:19,287 DEBUG   MainThread:55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:07:20,107 DEBUG   Thread-21 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-09-21 10:07:20,185 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:07:20,278 DEBUG   Thread-21 :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-09-21 10:07:20,287 DEBUG   Thread-7  :55072 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/carey/launch-demo/jrxrmto8/file_stream HTTP/1.1" 200 None
+2021-09-21 10:07:20,289 DEBUG   Thread-21 :55072 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-09-21 10:07:20,295 INFO    MainThread:55072 [run_manager.py:_sync_etc():1387] rendering summary
+2021-09-21 10:07:20,296 INFO    MainThread:55072 [run_manager.py:_sync_etc():1420] syncing files to cloud storage
+2021-09-21 10:07:20,605 DEBUG   Thread-21 :55072 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/carey/launch-demo/jrxrmto8/___batch_archive_1.tgz?Expires=1632330440&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=X8saw90W3JGPBUHIZlv7h0lLu189%2BieqdM41PHABAXmGFR0P01tr7RE2BANEglrommxMpymm15OnRzmaZFi4s7MZDU%2FUwq2PxBjtdOOPRmf77eIRvtux4hpQovIx6sSfyS1ToYScwiMmQ3Ppy27lMg1it2icq37AB5GGkn%2Bz7vN2%2FseNmHjJAoqi7YQUd7xlnDn8D1zCAs%2By1%2FyxDIO9VKIF4MXDJJR8%2Ft8H64eMaAlMRFbjyvv1GDcHYmWe0ImY4TxnG8BjoxSvU%2F0lAduGFgmX613Scm5IY9gH2HhRq%2BOnRtEQ80XQU6Jo3u%2BohmtE9bzI7LMtOmKg96NGocA%2FuA%3D%3D HTTP/1.1" 200 0
+2021-09-21 10:07:21,818 INFO    MainThread:55072 [run_manager.py:_sync_etc():1435] syncing complete: https://app.wandb.ai/carey/launch-demo/runs/jrxrmto8
+2021-09-21 10:07:21,818 INFO    MainThread:55072 [jrxrmto8:run_manager.py:_sync_etc():1435] syncing complete: https://app.wandb.ai/carey/launch-demo/runs/jrxrmto8

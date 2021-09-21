@@ -1,0 +1,23 @@
+{
+    "root": "/Users/carey/wb-test-script/launch-demo",
+    "program": "train.py",
+    "git": {
+        "remote": "https://github.com/cvphelps/launch-demo.git",
+        "commit": null
+    },
+    "email": "cvphelps@cs.stanford.edu",
+    "startedAt": "2021-09-21T17:02:57.089664",
+    "host": "carey",
+    "username": "carey",
+    "executable": "/Users/carey/.pyenv/versions/3.6.5/bin/python",
+    "os": "Darwin-18.7.0-x86_64-i386-64bit",
+    "python": "3.6.5",
+    "cpu_count": 12,
+    "args": [],
+    "state": "failed",
+    "jobType": null,
+    "mode": "run",
+    "project": "launch-demo",
+    "heartbeatAt": "2021-09-21T17:02:58.745050",
+    "exitcode": 1
+}
