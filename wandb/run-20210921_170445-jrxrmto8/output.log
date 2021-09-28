@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 16, in <module>
-    wandb.finish()
-AttributeError: module 'wandb' has no attribute 'finish'
